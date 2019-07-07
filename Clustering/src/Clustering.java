@@ -12,13 +12,13 @@ public class Clustering {
 
 		FileReader reader;
 		
-			reader = new FileReader("C:\\Users\\Sachithre\\eclipse-workspace\\lense.arff");
-			// read the dataset file
+			reader = new FileReader("C:\\Users\\Sachithre\\eclipse-workspace\\lense.arff"); // Location of the .arff file
+			
 			Instances instance_train;
 			
 				instance_train = new Instances(reader);
 				instance_train.deleteAttributeAt(4);
-				BufferedReader fi = new BufferedReader(reader); //read the file and pass data to buffer
+				BufferedReader fi = new BufferedReader(reader); 
 				fi.close();
 				instance_train.setClassIndex(3);
 				
